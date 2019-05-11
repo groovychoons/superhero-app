@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 
+// Individual colour block component
 class ColourBlock extends Component {
   render() {
+    // Destructuring props
     const { name, selectedColour, colour, onSelect } = this.props;
 
     let colourBlock;
 
+    // Display white border if colour is selected
     if (name === selectedColour) {
       colourBlock = (
         <svg width="60" height="60" onClick={() => onSelect(name)}>
@@ -24,7 +27,9 @@ class ColourBlock extends Component {
           />
         </svg>
       );
-    } else {
+    }
+    // Display without border if colour is not selected
+    else {
       colourBlock = (
         <svg width="60" height="60" onClick={() => onSelect(name)}>
           <rect
@@ -44,6 +49,7 @@ class ColourBlock extends Component {
   }
 }
 
+// Component to generate six colour blocks
 const ColourSelector = props => {
   return (
     <div className="py-4">

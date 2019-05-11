@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
 import ColourSelector from "./components/ColourSelector";
+import NameDisplay from "./components/NameDisplay";
 
 import "./App.css";
-import NameDisplay from "./components/NameDisplay";
 
 /*
 - Build a simple single page app that generates and displays the name of a fictional superhero / villain for the user. (Optional) You could also include a special power.
@@ -18,7 +18,6 @@ class App extends Component {
       colour: "",
       animal: "",
       activity: "",
-      errors: {},
       heroname: "",
       superpower: ""
     };
