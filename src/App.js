@@ -19,7 +19,8 @@ class App extends Component {
       animal: "",
       activity: "",
       heroname: "",
-      superpower: ""
+      superpower: "",
+      testadd: ""
     };
 
     this.onChange = this.onChange.bind(this);
